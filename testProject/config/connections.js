@@ -42,11 +42,11 @@ module.exports.connections = {
   ***************************************************************************/
   bearberry: {
     adapter: 'sails-mysql',
-    host: 'localhost',
-    port: 33060
-    user: 'root', //optional
+    host: '127.0.0.1',
+    port: '33060',
+    user: 'homestead', //optional
     password: 'secret', //optional
-    database: 'bearberry' //optional
+    database: 'sails01' //optional
   },
 
   /***************************************************************************
