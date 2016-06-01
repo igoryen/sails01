@@ -1,9 +1,11 @@
-<!-- <!DOCTYPE html>
-<html>
-	<head></head>
-	<body> -->
-		<h1>Igoryen = <%= __('Igoryen')%></h1>
-<!-- 	</body>	
-</html>
- -->
+
+<h1>Igoryen = <%= __('Igoryen')%></h1>
+<p>My first name: <%= user.fname %></p>
+<p>My last name: <%= user.lname %></p>
+
+<ul>
+	<% _.each(fammembers, function (fammember) { %>
+	<li><%= fammember.name %></li>
+	<% }) %>
+</ul>
 

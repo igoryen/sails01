@@ -36,7 +36,18 @@ module.exports.routes = {
     view: 'homepage'
   },
   'get /me' : {
-    view: 'igoryen'
+    view: 'igoryen',
+    locals: {
+      user: {
+        fname: 'Igor',
+        lname: 'Entaltsev'
+      },
+      fammembers : [
+        {name: 'Daniel'},
+        {name: 'Jenica'},
+        {name: 'Joy'}
+      ]
+    }
   }
   //'get /me': 'MyController.hi'
 
